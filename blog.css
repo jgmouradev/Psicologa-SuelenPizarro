@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background:white;
+}
+
+.header{
+    width: 100%;
+    height: 21vh;
+    background:#fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Overpass', sans-serif;
+    
+}
+.logo{
+    padding: 30px;
+    text-align: center;
+}
+.logo h2{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.logo p{
+    text-transform:capitalize;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    margin: auto;
+    margin-left: 50px;
+    padding: 5px;
+}
+nav a{
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+    text-transform: capitalize;
+}
+nav a:hover{
+    border-bottom: 2px solid black; 
+}
+.banner{
+    margin-top: 65px;
+}
+.banner img{
+    width: 100%;
+    height: 465px;
+    background-size: cover;
+}
+
+ #icon{
+    color: black;
+    font-size: 2rem;
+    line-height: 80px;
+    cursor: pointer;
+    display:none;
+ }
+ 
+ .blog h1{
+    margin: 60px 0px 60px 0px;
+    font-size: 3rem;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+ }
+
+ .cardsflex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    grid-gap:40px;
+    max-width:1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.cards{
+    width: 340px;
+    height:445px;
+    background:lightgray;
+    border-radius:5px;
+    max-width: 1000px;
+}
+.cards img{
+    height: 300px;
+    width: 340px;
+}
+.cards h2{
+    text-align: center;
+    margin: 10px;
+    
+}
+.cards p{
+    text-align: center;
+    margin: 10px 20px;
+}
+ 
+ 
+
+.redesocial ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.redesocial li{
+    padding:20px;
+    margin-bottom: -20px;
+}
+.footer{
+    margin-top: 25px;
+    background:#f8f9fa;
+
+    
+}
+.footer h1{
+    padding: 20px;
+    color:black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+ /*RESPONSIVIDADE************************/
+@media(max-width:865px){
+    .header{
+        justify-content: center;
+    }
+    nav li{
+        display: none;
+    }
+    #icon{
+        display:block;
+        float: right;
+        padding: 40px;
+        margin-top: -140px;
+    }
+
+    nav ul{
+        position: fixed;
+        display:block;
+        width: 100%;
+        height: 61vh;
+        background:black;
+        top: 170px;
+        right: -100%;
+        transition: .5s all;
+        text-align:center;
+        opacity: 0.8;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+    nav a {
+        font-size: 20px;
+        color:white;
+        font-family: 'Overpass', sans-serif;
+        
+    }
+    
+    nav ul.show{
+        right:0;
+    }
+    .banner img{
+        height: 375px;
+    }
+    .banner{
+        margin-top: 85px;
+    }
+    .sobre .container{
+       flex-wrap: wrap;
+     
+    }
+    .sobre img{
+        width: 250px;
+        height: 285px;
+        
+    }
+    .sobre h1{
+       margin: 30px 0px 30px 0px;
+       font-size: 2.5rem;
+       font-family: 'Overpass', sans-serif;
+       text-align: center;
+    }
+    .sobre p{
+        margin: 0px 20px;
+    }
+
+    
+    
+}
+
+ 
+

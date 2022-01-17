@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b6500aa49d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png"><title>Suélen Pizarro - Blog</title>
+    
+</head>
+<body>
+    <nav class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+            <h2>Suélen Pizarro</h2>
+            <p>Psicóloga</p>
+            <p>CRP 00/00000</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+         </ul>
+        </nav>
+    <label id="icon">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section class="banner">
+        <img src="images/blog.jpg" alt="">
+    </section>
+
+    <section class="blog">
+        <h1>Artigos Interessantes</h1>
+        <div class="cardsflex reveal">
+        <div class="cards">
+            <img src="images/a1.jpg" alt="">
+            <h2>Ambiente de Trabalho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae deserunt vel voluptatibus rem ratione.</p>
+        </div>
+        <div class="cards">
+            <img src="images/a2.jpg" alt="">
+            <h2>Seja Grato por tudo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae deserunt vel voluptatibus rem ratione.</p>
+        </div>
+    </div>
+    <div class="cardsflex reveal">
+        <div class="cards">
+            <img src="images/a3.jpg" alt="">
+            <h2>Depressão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae deserunt vel voluptatibus rem ratione.</p>
+        </div>
+        <div class="cards">
+            <img src="images/a4.jpg" alt="">
+            <h2>Violência Doméstica</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae deserunt vel voluptatibus rem ratione.</p>
+        </div>
+    </div>
+    
+         
+    </section>
+
+     <footer class="footer">
+                <div class="redesocial">
+                    <ul class="fa-ul">
+                        <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                <h1>Suélen Pizarro 2021 &copy; Todos os direitos reservados.</h1>
+            
+            
+              </footer>
+        </div>
+    </section>
+    </body>
+    <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        })
+    })
+</script>
+
+</html>
